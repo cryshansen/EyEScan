@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		373E693013F1FD3D005CFAF6 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 373E692F13F1FD3D005CFAF6 /* libiconv.dylib */; };
+		37482B3A13E897BF00212632 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37482B3913E897BF00212632 /* UIKit.framework */; };
+		37482B3C13E897BF00212632 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37482B3B13E897BF00212632 /* Foundation.framework */; };
+		37482B3E13E897BF00212632 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37482B3D13E897BF00212632 /* CoreGraphics.framework */; };
+		37482B4413E897BF00212632 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37482B4213E897BF00212632 /* InfoPlist.strings */; };
+		37482B4713E897BF00212632 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37482B4613E897BF00212632 /* main.m */; };
+		37482B4A13E897BF00212632 /* iQRContactAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37482B4913E897BF00212632 /* iQRContactAppDelegate.m */; };
+		37482B4D13E897BF00212632 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37482B4B13E897BF00212632 /* MainWindow.xib */; };
+		37482B5013E897BF00212632 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37482B4F13E897BF00212632 /* FirstViewController.m */; };
+		37482B5313E897BF00212632 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37482B5213E897BF00212632 /* SecondViewController.m */; };
+		37482B5613E897BF00212632 /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37482B5413E897BF00212632 /* FirstView.xib */; };
+		37482B5913E897BF00212632 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37482B5713E897BF00212632 /* SecondView.xib */; };
+		37482B6013E897C000212632 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37482B3913E897BF00212632 /* UIKit.framework */; };
+		37482B6113E897C000212632 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37482B3B13E897BF00212632 /* Foundation.framework */; };
+		37482B6213E897C000212632 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37482B3D13E897BF00212632 /* CoreGraphics.framework */; };
+		37482B6A13E897C000212632 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37482B6813E897C000212632 /* InfoPlist.strings */; };
+		37482B6D13E897C000212632 /* iQRContactTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 37482B6C13E897C000212632 /* iQRContactTests.h */; };
+		37482B6F13E897C000212632 /* iQRContactTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37482B6E13E897C000212632 /* iQRContactTests.m */; };
+		37482B7D13E8987200212632 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37482B7813E8987200212632 /* AddressBook.framework */; };
+		37482B7E13E8987200212632 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37482B7913E8987200212632 /* AVFoundation.framework */; };
+		37482B7F13E8987200212632 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37482B7A13E8987200212632 /* CoreMedia.framework */; };
+		37482B8013E8987200212632 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37482B7B13E8987200212632 /* CoreVideo.framework */; };
+		37482B8113E8987200212632 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37482B7C13E8987200212632 /* QuartzCore.framework */; };
+		37482B8513E8995200212632 /* vCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 37482B8413E8995200212632 /* vCard.m */; };
+		37B3684313F30B5300773931 /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B3684213F30B5300773931 /* libzbar.a */; };
+		37B3686213F30B9500773931 /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B3685C13F30B9500773931 /* libzbar.a */; };
+		37B3686313F30B9500773931 /* zbar-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 37B3685E13F30B9500773931 /* zbar-back.png */; };
+		37B3686413F30B9500773931 /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = 37B3685F13F30B9500773931 /* zbar-help.html */; };
+		37B3686513F30B9500773931 /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = 37B3686013F30B9500773931 /* zbar-helpicons.png */; };
+		37B3686613F30B9500773931 /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = 37B3686113F30B9500773931 /* zbar-samples.png */; };
+		37B3687B13F31B1300773931 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B3687A13F31B1300773931 /* Person.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37482B6313E897C000212632 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37482B2C13E897BF00212632 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37482B3413E897BF00212632;
+			remoteInfo = iQRContact;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		373E692F13F1FD3D005CFAF6 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		37482B3513E897BF00212632 /* iQRContact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iQRContact.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37482B3913E897BF00212632 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		37482B3B13E897BF00212632 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		37482B3D13E897BF00212632 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		37482B4113E897BF00212632 /* iQRContact-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iQRContact-Info.plist"; sourceTree = "<group>"; };
+		37482B4313E897BF00212632 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		37482B4513E897BF00212632 /* iQRContact-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iQRContact-Prefix.pch"; sourceTree = "<group>"; };
+		37482B4613E897BF00212632 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		37482B4813E897BF00212632 /* iQRContactAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iQRContactAppDelegate.h; sourceTree = "<group>"; };
+		37482B4913E897BF00212632 /* iQRContactAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iQRContactAppDelegate.m; sourceTree = "<group>"; };
+		37482B4C13E897BF00212632 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		37482B4E13E897BF00212632 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		37482B4F13E897BF00212632 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		37482B5113E897BF00212632 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		37482B5213E897BF00212632 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		37482B5513E897BF00212632 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
+		37482B5813E897BF00212632 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
+		37482B5F13E897C000212632 /* iQRContactTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iQRContactTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		37482B6713E897C000212632 /* iQRContactTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iQRContactTests-Info.plist"; sourceTree = "<group>"; };
+		37482B6913E897C000212632 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		37482B6B13E897C000212632 /* iQRContactTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iQRContactTests-Prefix.pch"; sourceTree = "<group>"; };
+		37482B6C13E897C000212632 /* iQRContactTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iQRContactTests.h; sourceTree = "<group>"; };
+		37482B6E13E897C000212632 /* iQRContactTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iQRContactTests.m; sourceTree = "<group>"; };
+		37482B7813E8987200212632 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		37482B7913E8987200212632 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		37482B7A13E8987200212632 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		37482B7B13E8987200212632 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		37482B7C13E8987200212632 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		37482B8313E8995200212632 /* vCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vCard.h; sourceTree = "<group>"; };
+		37482B8413E8995200212632 /* vCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vCard.m; sourceTree = "<group>"; };
+		37B3684213F30B5300773931 /* libzbar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libzbar.a; path = ZBarSDK/libzbar.a; sourceTree = "<group>"; };
+		37B3684813F30B9500773931 /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
+		37B3684913F30B9500773931 /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
+		37B3684A13F30B9500773931 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		37B3684B13F30B9500773931 /* ImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScanner.h; sourceTree = "<group>"; };
+		37B3684C13F30B9500773931 /* Processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Processor.h; sourceTree = "<group>"; };
+		37B3684D13F30B9500773931 /* Scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
+		37B3684E13F30B9500773931 /* Symbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symbol.h; sourceTree = "<group>"; };
+		37B3684F13F30B9500773931 /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		37B3685013F30B9500773931 /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		37B3685113F30B9500773931 /* zbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zbar.h; sourceTree = "<group>"; };
+		37B3685213F30B9500773931 /* ZBarCameraSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCameraSimulator.h; sourceTree = "<group>"; };
+		37B3685313F30B9500773931 /* ZBarCaptureReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCaptureReader.h; sourceTree = "<group>"; };
+		37B3685413F30B9500773931 /* ZBarHelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarHelpController.h; sourceTree = "<group>"; };
+		37B3685513F30B9500773931 /* ZBarImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImage.h; sourceTree = "<group>"; };
+		37B3685613F30B9500773931 /* ZBarImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImageScanner.h; sourceTree = "<group>"; };
+		37B3685713F30B9500773931 /* ZBarReaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderController.h; sourceTree = "<group>"; };
+		37B3685813F30B9500773931 /* ZBarReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderView.h; sourceTree = "<group>"; };
+		37B3685913F30B9500773931 /* ZBarReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderViewController.h; sourceTree = "<group>"; };
+		37B3685A13F30B9500773931 /* ZBarSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSDK.h; sourceTree = "<group>"; };
+		37B3685B13F30B9500773931 /* ZBarSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSymbol.h; sourceTree = "<group>"; };
+		37B3685C13F30B9500773931 /* libzbar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzbar.a; sourceTree = "<group>"; };
+		37B3685E13F30B9500773931 /* zbar-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-back.png"; sourceTree = "<group>"; };
+		37B3685F13F30B9500773931 /* zbar-help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "zbar-help.html"; sourceTree = "<group>"; };
+		37B3686013F30B9500773931 /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
+		37B3686113F30B9500773931 /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
+		37B3687913F31B1300773931 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		37B3687A13F31B1300773931 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37482B3213E897BF00212632 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37482B3C13E897BF00212632 /* Foundation.framework in Frameworks */,
+				37482B3A13E897BF00212632 /* UIKit.framework in Frameworks */,
+				37482B3E13E897BF00212632 /* CoreGraphics.framework in Frameworks */,
+				37482B7E13E8987200212632 /* AVFoundation.framework in Frameworks */,
+				37482B7F13E8987200212632 /* CoreMedia.framework in Frameworks */,
+				37482B8013E8987200212632 /* CoreVideo.framework in Frameworks */,
+				37482B8113E8987200212632 /* QuartzCore.framework in Frameworks */,
+				37482B7D13E8987200212632 /* AddressBook.framework in Frameworks */,
+				373E693013F1FD3D005CFAF6 /* libiconv.dylib in Frameworks */,
+				37B3684313F30B5300773931 /* libzbar.a in Frameworks */,
+				37B3686213F30B9500773931 /* libzbar.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37482B5B13E897C000212632 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37482B6013E897C000212632 /* UIKit.framework in Frameworks */,
+				37482B6113E897C000212632 /* Foundation.framework in Frameworks */,
+				37482B6213E897C000212632 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37482B2A13E897BF00212632 = {
+			isa = PBXGroup;
+			children = (
+				37B3684413F30B9500773931 /* ZBarSDK */,
+				37482B8213E8991000212632 /* Resources */,
+				37482B3F13E897BF00212632 /* iQRContact */,
+				37482B6513E897C000212632 /* iQRContactTests */,
+				37482B3813E897BF00212632 /* Frameworks */,
+				37482B3613E897BF00212632 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		37482B3613E897BF00212632 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37482B3513E897BF00212632 /* iQRContact.app */,
+				37482B5F13E897C000212632 /* iQRContactTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37482B3813E897BF00212632 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37482B3B13E897BF00212632 /* Foundation.framework */,
+				37482B3913E897BF00212632 /* UIKit.framework */,
+				37482B3D13E897BF00212632 /* CoreGraphics.framework */,
+				37482B7913E8987200212632 /* AVFoundation.framework */,
+				37482B7A13E8987200212632 /* CoreMedia.framework */,
+				37482B7B13E8987200212632 /* CoreVideo.framework */,
+				37482B7C13E8987200212632 /* QuartzCore.framework */,
+				37482B7813E8987200212632 /* AddressBook.framework */,
+				373E692F13F1FD3D005CFAF6 /* libiconv.dylib */,
+				37B3684213F30B5300773931 /* libzbar.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37482B3F13E897BF00212632 /* iQRContact */ = {
+			isa = PBXGroup;
+			children = (
+				37482B4813E897BF00212632 /* iQRContactAppDelegate.h */,
+				37482B4913E897BF00212632 /* iQRContactAppDelegate.m */,
+				37482B4E13E897BF00212632 /* FirstViewController.h */,
+				37482B4F13E897BF00212632 /* FirstViewController.m */,
+				37482B8313E8995200212632 /* vCard.h */,
+				37482B8413E8995200212632 /* vCard.m */,
+				37482B5113E897BF00212632 /* SecondViewController.h */,
+				37482B5213E897BF00212632 /* SecondViewController.m */,
+				37482B4013E897BF00212632 /* Supporting Files */,
+				37B3687913F31B1300773931 /* Person.h */,
+				37B3687A13F31B1300773931 /* Person.m */,
+			);
+			path = iQRContact;
+			sourceTree = "<group>";
+		};
+		37482B4013E897BF00212632 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				37482B4113E897BF00212632 /* iQRContact-Info.plist */,
+				37482B4213E897BF00212632 /* InfoPlist.strings */,
+				37482B4513E897BF00212632 /* iQRContact-Prefix.pch */,
+				37482B4613E897BF00212632 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37482B6513E897C000212632 /* iQRContactTests */ = {
+			isa = PBXGroup;
+			children = (
+				37482B6C13E897C000212632 /* iQRContactTests.h */,
+				37482B6E13E897C000212632 /* iQRContactTests.m */,
+				37482B6613E897C000212632 /* Supporting Files */,
+			);
+			path = iQRContactTests;
+			sourceTree = "<group>";
+		};
+		37482B6613E897C000212632 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				37482B6713E897C000212632 /* iQRContactTests-Info.plist */,
+				37482B6813E897C000212632 /* InfoPlist.strings */,
+				37482B6B13E897C000212632 /* iQRContactTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37482B8213E8991000212632 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				37482B4B13E897BF00212632 /* MainWindow.xib */,
+				37482B5413E897BF00212632 /* FirstView.xib */,
+				37482B5713E897BF00212632 /* SecondView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		37B3684413F30B9500773931 /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				37B3684513F30B9500773931 /* Headers */,
+				37B3685C13F30B9500773931 /* libzbar.a */,
+				37B3685D13F30B9500773931 /* Resources */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		37B3684513F30B9500773931 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				37B3684613F30B9500773931 /* ZBarSDK */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		37B3684613F30B9500773931 /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				37B3684713F30B9500773931 /* zbar */,
+				37B3685113F30B9500773931 /* zbar.h */,
+				37B3685213F30B9500773931 /* ZBarCameraSimulator.h */,
+				37B3685313F30B9500773931 /* ZBarCaptureReader.h */,
+				37B3685413F30B9500773931 /* ZBarHelpController.h */,
+				37B3685513F30B9500773931 /* ZBarImage.h */,
+				37B3685613F30B9500773931 /* ZBarImageScanner.h */,
+				37B3685713F30B9500773931 /* ZBarReaderController.h */,
+				37B3685813F30B9500773931 /* ZBarReaderView.h */,
+				37B3685913F30B9500773931 /* ZBarReaderViewController.h */,
+				37B3685A13F30B9500773931 /* ZBarSDK.h */,
+				37B3685B13F30B9500773931 /* ZBarSymbol.h */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		37B3684713F30B9500773931 /* zbar */ = {
+			isa = PBXGroup;
+			children = (
+				37B3684813F30B9500773931 /* Decoder.h */,
+				37B3684913F30B9500773931 /* Exception.h */,
+				37B3684A13F30B9500773931 /* Image.h */,
+				37B3684B13F30B9500773931 /* ImageScanner.h */,
+				37B3684C13F30B9500773931 /* Processor.h */,
+				37B3684D13F30B9500773931 /* Scanner.h */,
+				37B3684E13F30B9500773931 /* Symbol.h */,
+				37B3684F13F30B9500773931 /* Video.h */,
+				37B3685013F30B9500773931 /* Window.h */,
+			);
+			path = zbar;
+			sourceTree = "<group>";
+		};
+		37B3685D13F30B9500773931 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				37B3685E13F30B9500773931 /* zbar-back.png */,
+				37B3685F13F30B9500773931 /* zbar-help.html */,
+				37B3686013F30B9500773931 /* zbar-helpicons.png */,
+				37B3686113F30B9500773931 /* zbar-samples.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		37482B3413E897BF00212632 /* iQRContact */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37482B7213E897C000212632 /* Build configuration list for PBXNativeTarget "iQRContact" */;
+			buildPhases = (
+				37482B3113E897BF00212632 /* Sources */,
+				37482B3213E897BF00212632 /* Frameworks */,
+				37482B3313E897BF00212632 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iQRContact;
+			productName = iQRContact;
+			productReference = 37482B3513E897BF00212632 /* iQRContact.app */;
+			productType = "com.apple.product-type.application";
+		};
+		37482B5E13E897C000212632 /* iQRContactTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37482B7513E897C000212632 /* Build configuration list for PBXNativeTarget "iQRContactTests" */;
+			buildPhases = (
+				37482B5A13E897C000212632 /* Sources */,
+				37482B5B13E897C000212632 /* Frameworks */,
+				37482B5C13E897C000212632 /* Resources */,
+				37482B5D13E897C000212632 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37482B6413E897C000212632 /* PBXTargetDependency */,
+			);
+			name = iQRContactTests;
+			productName = iQRContactTests;
+			productReference = 37482B5F13E897C000212632 /* iQRContactTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37482B2C13E897BF00212632 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 37482B2F13E897BF00212632 /* Build configuration list for PBXProject "iQRContact" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 37482B2A13E897BF00212632;
+			productRefGroup = 37482B3613E897BF00212632 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37482B3413E897BF00212632 /* iQRContact */,
+				37482B5E13E897C000212632 /* iQRContactTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37482B3313E897BF00212632 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37482B4413E897BF00212632 /* InfoPlist.strings in Resources */,
+				37482B4D13E897BF00212632 /* MainWindow.xib in Resources */,
+				37482B5613E897BF00212632 /* FirstView.xib in Resources */,
+				37482B5913E897BF00212632 /* SecondView.xib in Resources */,
+				37B3686313F30B9500773931 /* zbar-back.png in Resources */,
+				37B3686413F30B9500773931 /* zbar-help.html in Resources */,
+				37B3686513F30B9500773931 /* zbar-helpicons.png in Resources */,
+				37B3686613F30B9500773931 /* zbar-samples.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37482B5C13E897C000212632 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37482B6A13E897C000212632 /* InfoPlist.strings in Resources */,
+				37482B6D13E897C000212632 /* iQRContactTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37482B5D13E897C000212632 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37482B3113E897BF00212632 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37482B4713E897BF00212632 /* main.m in Sources */,
+				37482B4A13E897BF00212632 /* iQRContactAppDelegate.m in Sources */,
+				37482B5013E897BF00212632 /* FirstViewController.m in Sources */,
+				37482B5313E897BF00212632 /* SecondViewController.m in Sources */,
+				37482B8513E8995200212632 /* vCard.m in Sources */,
+				37B3687B13F31B1300773931 /* Person.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37482B5A13E897C000212632 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37482B6F13E897C000212632 /* iQRContactTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37482B6413E897C000212632 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37482B3413E897BF00212632 /* iQRContact */;
+			targetProxy = 37482B6313E897C000212632 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		37482B4213E897BF00212632 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37482B4313E897BF00212632 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		37482B4B13E897BF00212632 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37482B4C13E897BF00212632 /* en */,
+			);
+			name = MainWindow.xib;
+			path = iQRContact;
+			sourceTree = "<group>";
+		};
+		37482B5413E897BF00212632 /* FirstView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37482B5513E897BF00212632 /* en */,
+			);
+			name = FirstView.xib;
+			path = iQRContact;
+			sourceTree = "<group>";
+		};
+		37482B5713E897BF00212632 /* SecondView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37482B5813E897BF00212632 /* en */,
+			);
+			name = SecondView.xib;
+			path = iQRContact;
+			sourceTree = "<group>";
+		};
+		37482B6813E897C000212632 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37482B6913E897C000212632 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		37482B7013E897C000212632 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Crystal Hansen (ZQD5A5CP39)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				"OTHER_CFLAGS[arch=*]" = "";
+				PROVISIONING_PROFILE = "8034D898-595A-4CB3-8EC5-DEB68CF3B5EA";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		37482B7113E897C000212632 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		37482B7313E897C000212632 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iQRContact/iQRContact-Prefix.pch";
+				INFOPLIST_FILE = "iQRContact/iQRContact-Info.plist";
+				LIBRARY_SEARCH_PATHS = "";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ZBarSDK\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		37482B7413E897C000212632 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iQRContact/iQRContact-Prefix.pch";
+				INFOPLIST_FILE = "iQRContact/iQRContact-Info.plist";
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		37482B7613E897C000212632 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iQRContact.app/iQRContact";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iQRContactTests/iQRContactTests-Prefix.pch";
+				INFOPLIST_FILE = "iQRContactTests/iQRContactTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		37482B7713E897C000212632 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iQRContact.app/iQRContact";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iQRContactTests/iQRContactTests-Prefix.pch";
+				INFOPLIST_FILE = "iQRContactTests/iQRContactTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37482B2F13E897BF00212632 /* Build configuration list for PBXProject "iQRContact" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37482B7013E897C000212632 /* Debug */,
+				37482B7113E897C000212632 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37482B7213E897C000212632 /* Build configuration list for PBXNativeTarget "iQRContact" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37482B7313E897C000212632 /* Debug */,
+				37482B7413E897C000212632 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37482B7513E897C000212632 /* Build configuration list for PBXNativeTarget "iQRContactTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37482B7613E897C000212632 /* Debug */,
+				37482B7713E897C000212632 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 37482B2C13E897BF00212632 /* Project object */;
+}
