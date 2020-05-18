@@ -1,2 +1,3 @@
 # EyEScan
-A little iphone QR reader app to create contacts driectly into the contact list of iPhone v4 
+
+Included is a little web generator of QR to read from iphone app and put into iphone contact list.
