@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37B367FE13F3046900773931 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B367FD13F3046900773931 /* UIKit.framework */; };
+		37B3680013F3046900773931 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B367FF13F3046900773931 /* Foundation.framework */; };
+		37B3680213F3046900773931 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B3680113F3046900773931 /* CoreGraphics.framework */; };
+		37B3680813F3046900773931 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37B3680613F3046900773931 /* InfoPlist.strings */; };
+		37B3680B13F3046900773931 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B3680A13F3046900773931 /* main.m */; };
+		37B3680E13F3046900773931 /* iQRProcessorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B3680D13F3046900773931 /* iQRProcessorAppDelegate.m */; };
+		37B3681113F3046900773931 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37B3680F13F3046900773931 /* MainWindow.xib */; };
+		37B3681413F3046900773931 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B3681313F3046900773931 /* FirstViewController.m */; };
+		37B3681713F3046900773931 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B3681613F3046900773931 /* SecondViewController.m */; };
+		37B3681A13F3046900773931 /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37B3681813F3046900773931 /* FirstView.xib */; };
+		37B3681D13F3046900773931 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37B3681B13F3046900773931 /* SecondView.xib */; };
+		37B3682413F3046900773931 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B367FD13F3046900773931 /* UIKit.framework */; };
+		37B3682513F3046900773931 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B367FF13F3046900773931 /* Foundation.framework */; };
+		37B3682613F3046900773931 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B3680113F3046900773931 /* CoreGraphics.framework */; };
+		37B3682E13F3046900773931 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37B3682C13F3046900773931 /* InfoPlist.strings */; };
+		37B3683113F3046900773931 /* iQRProcessorTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 37B3683013F3046900773931 /* iQRProcessorTests.h */; };
+		37B3683313F3046900773931 /* iQRProcessorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B3683213F3046900773931 /* iQRProcessorTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37B3682713F3046900773931 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37B367F013F3046800773931 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37B367F813F3046900773931;
+			remoteInfo = iQRProcessor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		37B367F913F3046900773931 /* iQRProcessor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iQRProcessor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37B367FD13F3046900773931 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		37B367FF13F3046900773931 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		37B3680113F3046900773931 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		37B3680513F3046900773931 /* iQRProcessor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iQRProcessor-Info.plist"; sourceTree = "<group>"; };
+		37B3680713F3046900773931 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		37B3680913F3046900773931 /* iQRProcessor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iQRProcessor-Prefix.pch"; sourceTree = "<group>"; };
+		37B3680A13F3046900773931 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		37B3680C13F3046900773931 /* iQRProcessorAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iQRProcessorAppDelegate.h; sourceTree = "<group>"; };
+		37B3680D13F3046900773931 /* iQRProcessorAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iQRProcessorAppDelegate.m; sourceTree = "<group>"; };
+		37B3681013F3046900773931 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		37B3681213F3046900773931 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		37B3681313F3046900773931 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		37B3681513F3046900773931 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		37B3681613F3046900773931 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		37B3681913F3046900773931 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
+		37B3681C13F3046900773931 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
+		37B3682313F3046900773931 /* iQRProcessorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iQRProcessorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		37B3682B13F3046900773931 /* iQRProcessorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iQRProcessorTests-Info.plist"; sourceTree = "<group>"; };
+		37B3682D13F3046900773931 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		37B3682F13F3046900773931 /* iQRProcessorTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iQRProcessorTests-Prefix.pch"; sourceTree = "<group>"; };
+		37B3683013F3046900773931 /* iQRProcessorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iQRProcessorTests.h; sourceTree = "<group>"; };
+		37B3683213F3046900773931 /* iQRProcessorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iQRProcessorTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37B367F613F3046900773931 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37B367FE13F3046900773931 /* UIKit.framework in Frameworks */,
+				37B3680013F3046900773931 /* Foundation.framework in Frameworks */,
+				37B3680213F3046900773931 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37B3681F13F3046900773931 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37B3682413F3046900773931 /* UIKit.framework in Frameworks */,
+				37B3682513F3046900773931 /* Foundation.framework in Frameworks */,
+				37B3682613F3046900773931 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37B367EE13F3046800773931 = {
+			isa = PBXGroup;
+			children = (
+				37B3680313F3046900773931 /* iQRProcessor */,
+				37B3682913F3046900773931 /* iQRProcessorTests */,
+				37B367FC13F3046900773931 /* Frameworks */,
+				37B367FA13F3046900773931 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		37B367FA13F3046900773931 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37B367F913F3046900773931 /* iQRProcessor.app */,
+				37B3682313F3046900773931 /* iQRProcessorTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37B367FC13F3046900773931 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37B367FD13F3046900773931 /* UIKit.framework */,
+				37B367FF13F3046900773931 /* Foundation.framework */,
+				37B3680113F3046900773931 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37B3680313F3046900773931 /* iQRProcessor */ = {
+			isa = PBXGroup;
+			children = (
+				37B3680C13F3046900773931 /* iQRProcessorAppDelegate.h */,
+				37B3680D13F3046900773931 /* iQRProcessorAppDelegate.m */,
+				37B3680F13F3046900773931 /* MainWindow.xib */,
+				37B3681213F3046900773931 /* FirstViewController.h */,
+				37B3681313F3046900773931 /* FirstViewController.m */,
+				37B3681513F3046900773931 /* SecondViewController.h */,
+				37B3681613F3046900773931 /* SecondViewController.m */,
+				37B3681813F3046900773931 /* FirstView.xib */,
+				37B3681B13F3046900773931 /* SecondView.xib */,
+				37B3680413F3046900773931 /* Supporting Files */,
+			);
+			path = iQRProcessor;
+			sourceTree = "<group>";
+		};
+		37B3680413F3046900773931 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				37B3680513F3046900773931 /* iQRProcessor-Info.plist */,
+				37B3680613F3046900773931 /* InfoPlist.strings */,
+				37B3680913F3046900773931 /* iQRProcessor-Prefix.pch */,
+				37B3680A13F3046900773931 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37B3682913F3046900773931 /* iQRProcessorTests */ = {
+			isa = PBXGroup;
+			children = (
+				37B3683013F3046900773931 /* iQRProcessorTests.h */,
+				37B3683213F3046900773931 /* iQRProcessorTests.m */,
+				37B3682A13F3046900773931 /* Supporting Files */,
+			);
+			path = iQRProcessorTests;
+			sourceTree = "<group>";
+		};
+		37B3682A13F3046900773931 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				37B3682B13F3046900773931 /* iQRProcessorTests-Info.plist */,
+				37B3682C13F3046900773931 /* InfoPlist.strings */,
+				37B3682F13F3046900773931 /* iQRProcessorTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		37B367F813F3046900773931 /* iQRProcessor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37B3683613F3046900773931 /* Build configuration list for PBXNativeTarget "iQRProcessor" */;
+			buildPhases = (
+				37B367F513F3046900773931 /* Sources */,
+				37B367F613F3046900773931 /* Frameworks */,
+				37B367F713F3046900773931 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iQRProcessor;
+			productName = iQRProcessor;
+			productReference = 37B367F913F3046900773931 /* iQRProcessor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		37B3682213F3046900773931 /* iQRProcessorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37B3683913F3046900773931 /* Build configuration list for PBXNativeTarget "iQRProcessorTests" */;
+			buildPhases = (
+				37B3681E13F3046900773931 /* Sources */,
+				37B3681F13F3046900773931 /* Frameworks */,
+				37B3682013F3046900773931 /* Resources */,
+				37B3682113F3046900773931 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37B3682813F3046900773931 /* PBXTargetDependency */,
+			);
+			name = iQRProcessorTests;
+			productName = iQRProcessorTests;
+			productReference = 37B3682313F3046900773931 /* iQRProcessorTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37B367F013F3046800773931 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 37B367F313F3046800773931 /* Build configuration list for PBXProject "iQRProcessor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 37B367EE13F3046800773931;
+			productRefGroup = 37B367FA13F3046900773931 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37B367F813F3046900773931 /* iQRProcessor */,
+				37B3682213F3046900773931 /* iQRProcessorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37B367F713F3046900773931 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37B3680813F3046900773931 /* InfoPlist.strings in Resources */,
+				37B3681113F3046900773931 /* MainWindow.xib in Resources */,
+				37B3681A13F3046900773931 /* FirstView.xib in Resources */,
+				37B3681D13F3046900773931 /* SecondView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37B3682013F3046900773931 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37B3682E13F3046900773931 /* InfoPlist.strings in Resources */,
+				37B3683113F3046900773931 /* iQRProcessorTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37B3682113F3046900773931 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37B367F513F3046900773931 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37B3680B13F3046900773931 /* main.m in Sources */,
+				37B3680E13F3046900773931 /* iQRProcessorAppDelegate.m in Sources */,
+				37B3681413F3046900773931 /* FirstViewController.m in Sources */,
+				37B3681713F3046900773931 /* SecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37B3681E13F3046900773931 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37B3683313F3046900773931 /* iQRProcessorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37B3682813F3046900773931 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37B367F813F3046900773931 /* iQRProcessor */;
+			targetProxy = 37B3682713F3046900773931 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		37B3680613F3046900773931 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37B3680713F3046900773931 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		37B3680F13F3046900773931 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37B3681013F3046900773931 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		37B3681813F3046900773931 /* FirstView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37B3681913F3046900773931 /* en */,
+			);
+			name = FirstView.xib;
+			sourceTree = "<group>";
+		};
+		37B3681B13F3046900773931 /* SecondView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37B3681C13F3046900773931 /* en */,
+			);
+			name = SecondView.xib;
+			sourceTree = "<group>";
+		};
+		37B3682C13F3046900773931 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37B3682D13F3046900773931 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		37B3683413F3046900773931 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		37B3683513F3046900773931 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		37B3683713F3046900773931 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iQRProcessor/iQRProcessor-Prefix.pch";
+				INFOPLIST_FILE = "iQRProcessor/iQRProcessor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		37B3683813F3046900773931 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iQRProcessor/iQRProcessor-Prefix.pch";
+				INFOPLIST_FILE = "iQRProcessor/iQRProcessor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		37B3683A13F3046900773931 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iQRProcessor.app/iQRProcessor";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iQRProcessorTests/iQRProcessorTests-Prefix.pch";
+				INFOPLIST_FILE = "iQRProcessorTests/iQRProcessorTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		37B3683B13F3046900773931 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iQRProcessor.app/iQRProcessor";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iQRProcessorTests/iQRProcessorTests-Prefix.pch";
+				INFOPLIST_FILE = "iQRProcessorTests/iQRProcessorTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37B367F313F3046800773931 /* Build configuration list for PBXProject "iQRProcessor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37B3683413F3046900773931 /* Debug */,
+				37B3683513F3046900773931 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37B3683613F3046900773931 /* Build configuration list for PBXNativeTarget "iQRProcessor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37B3683713F3046900773931 /* Debug */,
+				37B3683813F3046900773931 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		37B3683913F3046900773931 /* Build configuration list for PBXNativeTarget "iQRProcessorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37B3683A13F3046900773931 /* Debug */,
+				37B3683B13F3046900773931 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 37B367F013F3046800773931 /* Project object */;
+}
